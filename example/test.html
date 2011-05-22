@@ -1,17 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-     
 <head>
-    <title></title>
     <link rel="stylesheet" type="text/css" href="./css/carousel-skin.css" />
     <script type="text/javascript" src="./js/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery-embedagram.pack.js"></script>
     <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-    	embed_success = function (){ $('#slideshow').jcarousel() };
-        $('#slideshow').embedagram({instagram_id: <your-instagram-id>, success: embed_success, limit: 5});
+        $('#slideshow').embedagram({
+            instagram_id: <your-instagram-id>, 
+            success: function (){ $('#slideshow').jcarousel() }, 
+            limit: 5
+        });
     });
     </script>
 </head>  
